@@ -40,6 +40,9 @@ class Offer():
         return int(salary)
 
     # calculate the average salary of the 125 highest salaries
+    # use main heap to find top 125 highest salaries
+    # Time O(nlog(k))
+    # Space O(k)
     def find_average(self, lis, k):
         heap = []
         for salary in lis.values():
